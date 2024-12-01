@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('Food.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 3rem 2rem;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Food List Styles */
+.food-list {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row; /* Change to row direction to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the screen is too narrow */
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column; /* Keep items inside food-item stacked vertically */
+    align-items: center; /* Center align items within each food item */
+    background-color: black; /* Background color */
+    padding: 15px; /* Padding inside food item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center text */
+    max-width: 300px; /* Maximum width for each food item */
+    margin: 0; /* Remove auto margin to avoid spacing issues */
+}
+
+.food-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.food-item a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+.food-item img {
+    width: 100%; /* Full width of the food item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.food-item h3 {
+    margin: 0; /* No margin for headings */
+    color: #2c3e50; /* Heading color */
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
