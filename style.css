@@ -1,0 +1,348 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: black;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Dagadusheth.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.auth-links {
+    padding-top: 60px; /* Adjust this value based on the height of your nav */
+    margin: 0; /* Remove any default margins */
+    display: flex; /* Align links horizontally */
+    justify-content: flex-start; /* Align to the left */
+    gap: 1rem; /* Space between the links */
+}
+
+.auth-links a {
+    color: #333; /* Link color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.auth-links a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+
+.hero-content {
+    animation: fadeIn 2s ease-out;
+    text-align: center; /* Center text and button */
+    margin-bottom: 20px; /* Space below the hero content */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ffa000;
+    transform: scale(1.1);
+}
+
+/* Ensure body has no default margin */
+body {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 1rem; /* Padding around the navigation */
+    position: fixed; /* Fixes the nav bar in place */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    z-index: 1000; /* Ensures it appears above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    width: 100%; /* Ensure it takes the full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Aligns items to the left */
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays list items in a row */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+nav ul li {
+    margin: 0 1rem; /* Horizontal spacing between items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.1rem; /* Font size */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Changes color on hover */
+    text-shadow: 0px 0px 5px rgba(255, 193, 7, 0.8); /* Text shadow effect on hover */
+}
+
+/* Auth links styles */
+.auth-links {
+    padding-top: 60px; /* Adjust this value based on the height of your nav */
+    margin: 0; /* Remove any default margins */
+    display: flex; /* Align links horizontally */
+    justify-content: flex-start; /* Align to the left */
+    gap: 1rem; /* Space between the links */
+}
+
+.auth-links a {
+    color: #333; /* Link color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.auth-links a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+
+/* Section Styling */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    color: #555;
+}
+
+.section .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Gallery Grid */
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.gallery .grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section.location {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.section.location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:#0056b3;
+    position: relative;
+}
+
+.section.location p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* Booking Section Styles */
+.section.booking {
+    background-color: black; /* Light background for the booking section */
+    padding: 40px 20px; /* Add some padding */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add margin to separate it from other sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.section.booking h2 {
+    font-size: 2em; /* Large heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color:#0056b3; /* Darker text color */
+}
+
+.section.booking p {
+    font-size: 1.2em; /* Larger text for better readability */
+    line-height: 1.5; /* Better spacing between lines */
+    color: #555; /* Medium text color */
+}
+
+.section.booking a {
+    display: inline-block; /* Make the link a block element for padding */
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.section.booking a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Contact Form */
+button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
